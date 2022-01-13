@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CV Stoliarchuk Nataliia</title>
+</head>
+<body>
+<div class="body-container">
+<header class="header">
+   <div class="header-content">
+       <div class="header-content__name">
+            <h1 class="header-content__title">Столярчук Наталья</h1>
+            <h2 class="header-content__profession">Frontend Developer</h2>
+       </div>
+       <div class="header-content__grid">
+       <div class="header-contacts">
+            <p class="header-contacts__title"><i class="fas fa-envelope-square"></i> n.stolyarchuk1@gmail.com</p>  
+            <p class="header-contacts__title"><i class="fas fa-mobile-alt"></i> +38 0993457170</p>
+            <p class="header-contacts__title"><i class="fab fa-telegram-plane"></i> Stolyarchuk Natalya</p>
+            <p class="header-contacts__title"><i class="fab fa-skype"></i> user@skype.com</p>
+            <p class="header-contacts__title"><i class="fas fa-map-marker-alt"></i> Ukraine Kyiv</p>
+        </div>
+        <div class="header-avatar">
+            <img class="header-avatar__image" src="assets/img/avatar.jpg" alt="foto">                                                                                                            
+        </div>     
+    </div>
+   </div>
+</header>
+
+<main class="container-about">
+<div class="container-about__personal">
+    <h2 class="container-about__title">Личные навыки</h2>
+    <p class="container-about__content">Умение работать в команде, внимательна к деталям, решение конфликтных ситуаций,  умение слушать, быстрая обучаемость и многозадачность.</p>
+</div>
+
+   <div class="container-about__personal">
+       <h2 class="container-about__title">Профессиональные навыки</h2>
+       <ul class="container-about__content">
+           <li class="container-about__list">HTML, CSS, SASS, JS</li>
+           <li class="container-about__list">Git, Node JS, Gulp</li>
+           <li class="container-about__list">Bootstrap,</li>
+           <li class="container-about__list">Angular</li>
+       </ul>
+   </div>
+
+   <div class="container-about__personal">
+      <h2 class="container-about__title">Опыт работы</h2> 
+      <p class="container-about__content">Опыта работы в проограмировании нету, Junior после обучения.</p>
+    </div>
+    <div class="container-about__work">
+      <table class="table-work">
+          <tr class="table-work__list">
+             <td>USI</td>
+             <td>Account Manager</td>
+             <td>2021 - now</td> 
+          </tr>
+          <tr class="table-work__list">
+            <td>FLP</td>
+            <td>Account Manager</td>
+            <td>2016 - 2021</td> 
+         </tr>
+         <tr class="table-work__list">
+            <td>BVS</td>
+            <td>Account Manager</td>
+            <td>2014 - 2016</td> 
+         </tr>
+         <tr class="table-work__list">
+            <td>Lasso</td>
+            <td>Account Manager</td>
+            <td>2012 - 2014</td> 
+         </tr>
+      </table>
+   </div>
+  
+<div class="container-feedback">
+    <h2 class="container-feedback__title">Форма связи</h2>
+
+    <form class="form-feedback" action="contacts.php" method="get">
+        <fieldset class="form-feedback__container">
+            <legend class="form-feedback__title">#Заполните поля и отправьте сообщение</legend>
+            <label class="form-feedback__list">Ваше имя</label>
+            <input class="form-feedback__input" name="Имя" placeholder="Введите имя" type="text">
+         </label>
+
+        <label class="form-feedback__list">Tел</label>
+            <input class="form-feedback__input" name="phone" type="tel" placeholder="Ваш телефон в формате 380-хх-ххх-хх-хх"
+            pattern="380-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+        
+
+        <label class="form-feedback__list">Email</label>
+            <input class="form-feedback__input" name="email" type="email" placeholder="Ваш email">
+        </fieldset>
+
+        <fieldset class="form-feedback__message"> 
+            <label class="form-feedback__list">Ваше сообщение</label>
+            <textarea class="form-feedback__textarea" name="message" id="text" cols="30" rows="2"></textarea>
+            
+            <label>
+                <input class="form-feedback__btn" type="submit" value="Отправить">
+            </label>
+        
+        </fieldset>
+       
+        
+        
+
+    </form>
+</div> 
+</main>
+
+<footer">
+<div class="container-footer">
+    <div class="footer-content">
+        <div class="footer-social">
+            <a class="footer-social__link" href="https://www.facebook.com/profile.php?id=100001012834562" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a class="footer-social__link" href="https://www.youtube.com/channel/UCRDw15_TYUC7OCrgnwQCsUg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+            <a class="footer-social__link" href="https://www.instagram.com/stoliarchukn/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a class="footer-social__link" href="https://www.linkedin.com/in/nataliia-stoliarchuk-488899210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="footer-social__link" href="https://github.com/Stoliarchuk111" target="_blank"><i class="fab fa-git-square"></i></a>
+        </div>
+        <div class="footer-copy">
+           &copy; <span>Stoliarchuk Nataliia 2022</span> 
+        </div>
+    </div>
+</div>
+</footer>
+</div>
+</body>
+</html>

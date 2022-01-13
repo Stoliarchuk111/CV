@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(131, 173, 194, 0.7);
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.body-container {
+    max-width: 750px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header-content {
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    background: rgb(119, 196, 183);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+.header-content:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 45%;
+    bottom: 0;
+    left: 0;
+    background: rgba(132, 203, 219, 0.925);
+    border-radius: 20px 0 0 20px;
+}
+
+.header-content__grid {
+    height: 260px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.header-content__title {
+    margin: 10px 0 5px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.header-content__profession {
+    margin: 0 0 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-avatar {
+    position: relative;
+}
+
+.header-avatar__image {
+    width: 200px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px #286270ea;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.header-contacts {
+    padding: 20px 40px;
+    font-weight: 500;
+}
+
+.header-contacts__title {
+    display: block;
+    margin: 16px auto 0;
+}
+
+.container-about {
+    padding: 20px;
+    margin-top: 10px;
+}
+.container-feedback,
+.container-about__personal,
+.container-about__work {
+    max-width: 750px;
+    background: rgba(119, 163, 173, 0.925);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.container-feedback__title,
+.container-about__title {
+    margin: 5px 0;
+    font-size: 20px;
+}
+.container-about__content {
+    padding-left: 15px;
+}
+
+.container-about__list {
+    list-style-type: none;
+}
+
+.table-work {
+    width: 100%;
+}
+
+.table-work__list td:nth-child(1) {
+    font-weight: 500;
+}
+
+.table-work__list td:nth-child(2), 
+.table-work__list td:nth-child(3) {
+    font-size: 14px;
+    color: #213d44ea;
+}
+
+
+.form-feedback__title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 5px;
+}
+
+.form-feedback__list {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 5px 3px 3px;
+}
+
+.form-feedback__input {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    height: 25px;
+    border: none;
+    color: transparent;
+    padding: 3px;
+    background-color: #2862701e;
+    border-bottom: 1px solid rgb(46, 117, 122);
+}
+
+.form-feedback__message {
+    display: flex;
+}
+
+.form-feedback__message > .form-feedback__list {
+    padding: 7px 5px;
+    margin-right: 13px;
+}
+
+.form-feedback__textarea {
+    width: 60%;
+    height: 50px;
+    background-color: #2862701e;
+    border-bottom: 1px solid rgb(46, 117, 122);
+}
+
+.form-feedback__btn {
+    margin: 15px 15px;
+    background-color: rgb(73, 108, 110);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-feedback__btn:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.container-footer {
+    max-width: 750px;
+    padding: 20px 40px;
+    margin: 0 0 5px;
+    text-align: center;
+    background: rgba(119, 163, 173, 0.925);
+    border-radius: 15px;
+}
+
+.footer-social {
+    margin-bottom: 7px;
+}
+
+.footer-copy {
+    font-weight: 500;
+}
+
+.footer-social__link {
+    color: rgb(18, 63, 71);
+    font-size: 30px;
+    margin: 5px 3px;
+}   
+
+.footer-social__link:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+@media (max-width: 700px) {
+
+    .header-content__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-avatar {
+       display: none;
+    }
+    .header-avatar__image {
+        display: none;
+    }
+
+    .form-feedback__textarea {
+        min-width: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .form-feedback__message {
+        padding: 2px;
+    }
+
+
+    .form-feedback__btn {
+        margin: 15px 2px;
+        max-width: 55px;
+        font-size: 8px;
+    }
+
+    .form-feedback__message > .form-feedback__list {
+        padding: 0;
+        margin-right: 5px;
+    }
+
+    .header-contacts__title {
+        font-size: 10px;
+    }
+}
